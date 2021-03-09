@@ -14,7 +14,7 @@ const Title = (props) => (
             {props.title}
           </h3>
           {props.imgSrc === undefined ? null : 
-          <img src={props.imgSrc} alt="colorful desktop icon" className={styles.firstSectionGraphic} width="100px" height="100px" />
+          <img src={props.imgSrc} alt={props.alt} className={styles.firstSectionGraphic} width="100px" height="100px" />
           }
         </div>
         <div>

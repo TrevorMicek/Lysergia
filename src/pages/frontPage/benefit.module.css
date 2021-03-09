@@ -1,6 +1,5 @@
 .secondSection {
-    grid-column-start: left;
-    grid-column-end: right-gutter;
+    grid-column: 1/-1;
     grid-row-start: second;
     grid-row-end: third;
     padding-top: 5vh;
@@ -9,7 +8,6 @@
    display: flex;
    flex-direction: column;
    align-content: space-between;
-   text-shadow: 1px 1px lightgray;
 }
 .benefitWrapper > .firstGraphic {
    position: relative;
@@ -21,25 +19,25 @@
 }
 .benefitWrapper {
 
-   margin: 0 auto 7.5vh auto;
+   margin: 0 2vw 5vh 2vw;
    padding-top: 2vh;
    text-align: center;
-   width: 67vw;
-   border: 1px solid lightgray;
+ 
+   min-height: 60vh;
+   border: 1px solid rgb(70, 69, 69);
    border-radius: 5%;
-   box-shadow: 2px 2px 4px 2px lightgray;
-   background: white;
+   background: rgb(42, 42, 42);
 }
 .FirstTitle, .SecondTitle, .ThirdTitle {
-   font-size: 1.3rem;
-   margin: 1vh auto;
+   font-size: 1.4rem;
+   margin: 3vh auto;
    position: relative;
    bottom: 0vh;
-   color: #1a1a1a;
+   color: #fafafa;
 }
 .benefitWrapper > p {
-    color: #1a1a1a;
-    margin: 6vh 5vw 1vh 5vw;
+    color: #fafafa;
+    margin: 8vh 8vw 1vh 8vw;
     font-size: 1.1rem;
     position: relative;
     bottom: 3.5vh;    
@@ -62,21 +60,14 @@
     min-width: 12.5vw;
 }
 }
-@media only screen and (min-width: 668px) {
-.benefitWrapper {
-    width: 50vw;
-}
+@media only screen and (min-width:668px) {
+    .secondSection {
+        grid-column-start:left ;
+        grid-column-end: right-gutter ;
+    }
 }
 @media only screen and (min-width: 860px) {
-.secondSection {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.benefitWrapper {
-    min-width: 40vw;
-    max-width: 40vw;
-    margin-bottom: 5vh;
-}
+
 .secondSection > span {
     margin: 0 auto;
 }

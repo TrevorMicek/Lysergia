@@ -19,32 +19,34 @@ return (
         
         <div>
           <h4>
-            Follow Me!
+            Follow Us!
           </h4>
         
         </div>
       </section>
       <section className={styles.rightSideFooter}>
-        
-        <div className={styles.flaticon}>
-        <div>Icons made by <a href={'www.flaticon.com/authors/flat-icons'} title={'Flat Icons'}>Flat Icons</a> from <a href={'www.flaticon.com/'} title={'Flaticon'}>www.flaticon.com</a></div>
-        </div>
+      <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/roster">Roster</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+      </ul>
+      <ul>
+        <li><Link to="/merch">Merch</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/about">About</Link></li>
+        </ul>
+       
       </section>
       </div>
       <section className={styles.footerBottom}>
  
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/">About</Link></li>
-          <li><Link to="/">Contact</Link></li>
-          
-        </ul>
+       
         <div className={styles.copyright}>
         <h4>
         © {
           year.getFullYear()
-        }, Websites By Trevor LLC
+        }, Lysergia Art Collective
         </h4>
         </div>
       </section>

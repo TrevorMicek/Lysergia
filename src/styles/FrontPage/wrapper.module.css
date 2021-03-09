@@ -1,11 +1,8 @@
 .wrapper {
+    color: #fafafa;
     grid-column-start: left;
     grid-column-end: right-gutter;
     grid-row-start: first;
-    padding-top: 30vh;
-}
-@media only screen and (min-width: 320px) and (max-width: 410px) {
-    .wrapper {
-        padding-top: 10vh;
-    }
+    margin-top: 10vh;
+
 }

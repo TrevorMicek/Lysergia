@@ -1,39 +1,12 @@
 .waveContainer {
     position: relative;
-    transform: rotate(180deg);
-    background: #2c3e50;
+    background: #191919;
     height: 36vh;
     z-index: -1;
     width: 100vw;
     top: 5vh;
     padding-top: 10vh;
-}
-.wave {
-    position: absolute;
-    height: 70px;
-    min-width: 100%;    bottom: 30vh;
-    background: #2c3e50;
-    bottom: 0;
-}
-.wave::before, .wave::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-}
-.wave::before {
-    width: 55%;
-    height: 109%;
-    background-color: #fafafa;
-    right: -1.5%;
-    top: 60%;
-}
-.wave::after {
-    width: 55%;
-    height: 100%;
-    background-color: #2c3e50;
-    left: -1.5%;
-    top: 40%;
+    border-top: 1px solid #535252;
 }
 .footerContainer {
     line-height: 1;
@@ -41,11 +14,13 @@
     margin-top: 0vh;
     position: relative;
     bottom: 25vh;
+    
 }
 footer {
+
     max-height: 36vh;
     min-width: 100%;
-    background-color: #fafafa;
+    background:#161616;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -88,6 +63,8 @@ footer {
     right: 6vw;
     min-width: 10vw;
     max-width: 25vw;
+    display: flex;
+    flex-direction: row;
 }
 .flaticon {
     min-width: 35vw;
@@ -101,27 +78,26 @@ footer {
    font-size: .7rem;
 }
 .footerBottom {
-    margin-top: 5vh;
     text-align: center;
     font-size: 1.1rem;
 }
-.footerBottom >  ul {
+.rightSideFooter >  ul {
     list-style-type: none;
     color: white;
     text-shadow: 1px 1px black;
-    margin: 2vh auto 1vh auto;
+    margin: 2vh auto 0vh auto;
     padding: 0;
 }
-.footerBottom > ul > li > a {
+.rightSideFooter > ul > li > a {
    color: white;
-   margin-right: 1vw;
+   margin-right: 1.5vw;
 }
-.footerBottom > ul > li {
-   display: inline;
+.rightSideFooter > ul > li {
+   display: block;
 }
 .copyright { 
-    background: #1e2b38;
-    border-top: 1px solid #415569;
+    background: #202020;
+    border-top: 1px solid #3a3939;
     min-height: 6vh;
 }
 .footerBottom > div > h4 {

@@ -6,51 +6,50 @@
     justify-content: space-between;
     height: 15vh;
     z-index: 5;
-    background-color: #fafafa;
+    background: #161616;
     width: 100%;
+    border-bottom: 1px solid #858383;
 }
 .navWrapper > .leftsideNav {
-    color: #212121;
+    color: #fafafa;
     margin: 5vh 1vw 3vh 7vw;
 }
 .navWrapper > .rightsideNav {
    font-size: .9rem;
    text-align: justify;
+
 }
 .navList > li {
+    border-right: 1px solid white;
    text-align: center;
    position: relative;
 }
-.navList > li:active {
-   top: .25vh;
-   left: .25vw;
-   box-shadow: none;
-}
+
 .navList > li > a {
     min-width: 90px;
-    box-shadow: lightgrey 1px 2px 1px;
-    border: 1px solid black;
+    position: relative;
     margin: auto 1vw;
     display: inline-block;
     padding: 2.75vh 1vw;
     text-decoration: none;
-    color: black;
+    color: #fafafa;
 }
 .navList > li > a:active {
-    top: .5vh;
+    top: .25vh;
     left: .25vw;
     -webkit-box-shadow:  none;
     -moz-box-shadow:  none;
     box-shadow: none;
 }
 .navList {
+    
    list-style-type: none;
    min-height: 8vh;
    padding: 0;
 }
 .listItems {
     padding-top: 3vh;
-    background: #fafafa;
+    background: #161616;
     min-height: 10vh;
     padding-right: 3vw;
 }
@@ -61,6 +60,7 @@
   
  
 }
+
 .dropDown, .hamburger, .mobileNav {
     overflow: hidden;
     z-index: 5;
@@ -69,7 +69,7 @@
     min-height: 35px;
     max-height: 35px;
     padding: 0;
-    background: #fafafa;
+    background: #161616;
     outline: none;
     border: none;
     cursor: pointer;
@@ -85,7 +85,7 @@
 .mobileListItems {
     padding-top: 10vh;
     min-height: 80vh;
-    background: #fafafa;
+    background: #161616;
 }
 .mobileNavList {
     margin: 0;
@@ -94,7 +94,7 @@
 .mobileNavList > li {
     text-align: center;
     margin: 3vh auto;
-    background: white;
+    background: #161616;
  }
  .mobileNavList > li:active {
     top: .5vh;
@@ -109,8 +109,7 @@
     min-width: 60vw;
     padding: 3vh 1vw;
     text-decoration: none;
-    color: black;
-    text-shadow: 1px 1px lightgray;
+    color: #fafafa;
  }
  .mobileNavList > li > a:active {
     top: .5vh;

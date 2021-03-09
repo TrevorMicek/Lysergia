@@ -3,21 +3,14 @@ import React from 'react';
 
 import secondStyles from './secondaryHeader.module.css';
 import firstStyles from '../../styles/FrontPage/headerStyles.module.css';
+const lysergiaIcon = require('../../images/lysergiaGraphic.jpg')
+
 const Header = (props) => {
 
-  const firstTitle = 'Small Business Web Design & Development'
+  const firstTitle = 'Lysergia Art Collective';
   const HomeHeader = () => (
     <section className={firstStyles.headerPictureWrapper}>
-
-    <section className={firstStyles.firstSectionOverlay}></section>
-    <div className={firstStyles.firstTransition}></div>
-      <div className={firstStyles.headerBorder}>
-      <h1 className={firstStyles.headerTitle}>
-          <span>Small Business Web Design</span><span> & Development</span>
-      </h1>
-      <h2 className={firstStyles.headerText}>Websites By Trevor</h2>
-      </div>
-      
+      <img src={lysergiaIcon} width="300" height="250" className={firstStyles.graphic} />
     </section>
   )
   const SecondaryHeader = () => (

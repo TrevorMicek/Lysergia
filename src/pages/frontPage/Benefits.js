@@ -1,12 +1,15 @@
 import React from 'react';
 
-import info from '../../components/frontPage/benefitData';
-import styles from '../../components/frontPage/benefit.module.css'
-import CreateComponent from '../commonComps/createComponent';
+import info from '../../data/frontPage/benefitData';
+import styles from './benefit.module.css'
+import CreateComponent from '../../components/commonComps/createComponent';
 
+/*
+ <img src={props.icon} alt={props.alt} width="50px" height="50px" />
+*/
 const Benefit = (props) => (
 <div className={styles.benefitWrapper}>
-          <img src={props.icon} alt={props.alt} width="50px" height="50px" />
+         
           <h3 className={styles.FirstTitle}>
             {props.title}
           </h3>

@@ -5,31 +5,24 @@
     right: 0;
     left: 0;
     width: 100%;
-    height: 75vh;
-    background-image: linear-gradient(to top left, #990033, #006666 );
+    height: 55vh;
     z-index: 2;
+    /*
     transform: skewY(6deg);
     transform-origin: top-right;
-}
-.firstSectionOverlay {
-    background-color: rgba(0,0,0,.25);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75vh;
-    z-index: 3;
-    transform: skewY(6deg);
-    transform-origin: top-right;
+    */
 }
 .headerPictureWrapper {
     grid-column: span 5;
-    grid-row-start: header;
+    grid-row-start: header-top;
     grid-row-end: main;
 }
- .headerBorder {
-    min-height: 35vh;
-    margin: auto 5vw;
+.graphic {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    border-bottom: 1px solid #858383;
 }
 .headerTitle > span {
     display: block;
@@ -55,9 +48,7 @@
     top: 15vh;
  }
  @media only screen and (min-width: 320px) and (max-width: 410px) {
-    .firstTransition, .firstSectionOverlay {
-        height: 60vh;
-    }
+
     .headerBorder {
         margin: auto 3vw;
     }
@@ -69,15 +60,15 @@
     }
 }
 @media only screen and (min-width: 668px) {
-.firstSectionOverlay, .firstTransition {
-    min-height: 80vh;
-    max-height: 80vh;
+ .firstTransition {
+    min-height: 60vh;
+    max-height: 60vh;
 }
 }
 @media only screen and (min-width: 800px) {
-.firstSectionOverlay, .firstTransition {
-    min-height: 85vh;
-    max-height: 85vh;
+.firstTransition {
+    min-height: 70vh;
+    max-height: 70vh;
 }
 .headerBorder {
     min-height: 40vh;
@@ -86,14 +77,14 @@
 }
 @media only screen and (min-width: 968px) {
 .headerTitle {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 .headerText {
     font-size: 1.55rem;
 }
-.firstSectionOverlay, .firstTransition {
-    min-height: 90vh;
-    max-height: 90vh;
+ .firstTransition {
+    min-height: 80vh;
+    max-height: 80vh;
 }
 .headerBorder {
     min-height: 55vh;

@@ -1,8 +1,8 @@
 .grid {
    display: grid;
-   background: #fafafa;
+   background:#161616;
    grid-template-columns: [left-gutter] 1fr [left] 3fr [center] 3fr [right] 3fr [right-gutter] 1fr;
-   grid-template-rows: [nav] 1fr [header] 3fr [main] auto [footer] auto;
+   grid-template-rows: [nav] 1fr [header-top] 2fr [header] 2fr [main] auto [footer] auto;
 }
 .main {
     grid-column: span 5;

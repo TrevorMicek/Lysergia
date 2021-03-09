@@ -4,12 +4,12 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
 import styles from '../styles/ServicesPage/mainStyles.module.css';
-import info from '../data/services/pageData';
+import info from '../data/events/pageData';
 import SecondSectionTitle from '../components/commonComps/MainSectionTitle'
-import Package from '../components/servicesPricing/package';
-import pricing from '../components/servicesPricing/PricingInfo';
-import Benefit from '../components/servicesPricing/TopBenefits';
-import BenefitData from '../components/servicesPricing/BenefitData';
+import Package from './eventPage/package';
+import pricing from '../data/events/PricingInfo';
+import Benefit from './eventPage/TopBenefits';
+import BenefitData from '../data/events/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
 
 const ServicePage = () => (

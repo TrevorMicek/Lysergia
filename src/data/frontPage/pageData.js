@@ -1,8 +1,5 @@
-const qualityIcon = require('../../images//quality.svg')
-
 const data = {
-    title: "Websites Done Uniquely",
-    text: "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:",
-    imgSrc: qualityIcon
+    title: "Our Mission",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 }
 export default data;

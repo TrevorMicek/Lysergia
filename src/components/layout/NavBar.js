@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 
 import styles from './navBarStyles.module.css';
-const hamburger = require('../../images/HamburgerImg.svg')
-const xImg = require('../../images/X.svg')
+const hamburger = require('../../images/lightHamburgerImg.png')
+const xImg = require('../../images/lightX.png')
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,8 +25,8 @@ const Nav = () => {
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
-        Websites <br />
-        By Trevor
+        Lysergia <br />
+        Art Collective
       </div>
         <div className={styles.rightsideNav}>
           {isOpen ?
@@ -39,10 +39,12 @@ const Nav = () => {
         <div className={styles.mobileListItems}>
           <ul className={styles.mobileNavList}>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/templates">Templates</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/roster">Roster</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/merch">Merch</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">About</Link></li>
           </ul>
       </div> 
       </> :     
@@ -55,11 +57,13 @@ const Nav = () => {
        
       <div className={styles.listItems}>
       <ul className={styles.navList}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="">Templates</Link></li>
+      <li><Link to="/">Home</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/roster">Roster</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/merch">Merch</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">About</Link></li>
       </ul>
     </div>
     </>}
