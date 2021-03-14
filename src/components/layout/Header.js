@@ -10,7 +10,7 @@ const Header = (props) => {
   const firstTitle = 'Lysergia Art Collective';
   const HomeHeader = () => (
     <section className={firstStyles.headerPictureWrapper}>
-      <img src={lysergiaIcon} width="300" height="250" className={firstStyles.graphic} />
+      <img src={lysergiaIcon} width="400px" height="400px" className={firstStyles.graphic} />
     </section>
   )
   const SecondaryHeader = () => (

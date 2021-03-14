@@ -2,7 +2,8 @@
     color: #fafafa;
     grid-column-start: left;
     grid-column-end: right-gutter;
-    grid-row-start: first;
-    margin-top: 10vh;
+    grid-row-start: top-padding;
+    grid-row-end: first;
+    
 
 }

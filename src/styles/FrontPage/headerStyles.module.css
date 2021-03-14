@@ -14,15 +14,17 @@
 }
 .headerPictureWrapper {
     grid-column: span 5;
-    grid-row-start: header-top;
+    grid-row-start: header;
     grid-row-end: main;
+    display: flex;
+    justify-content:center;
+    background: black;
+    position: relative;
+    bottom: 17vh;
 }
 .graphic {
     margin: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    border-bottom: 1px solid #858383;
+    z-index: 4;  
 }
 .headerTitle > span {
     display: block;

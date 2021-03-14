@@ -1,7 +1,7 @@
 import React from 'react';
 
-import info from '../../data/frontPage/benefitData';
-import styles from './benefit.module.css'
+import info from '../../data/roster/profileData';
+import styles from '../../styles/RosterPage/profile.module.css'
 import CreateComponent from '../../components/commonComps/createComponent';
 
 /*
