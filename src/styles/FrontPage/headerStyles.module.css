@@ -21,6 +21,7 @@
     background: black;
     position: relative;
     bottom: 17vh;
+    border-bottom: 1px solid #858383;
 }
 .graphic {
     margin: 0;
