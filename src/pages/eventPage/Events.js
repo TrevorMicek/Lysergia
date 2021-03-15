@@ -3,9 +3,11 @@ import Event from './TopBenefits'
 import styles from '../../styles/EventPage/eventPage.module.css'
 const Events = (props) => {
 
-    return (
+    return ( 
+        <>
+        {props.dates === undefined ? <div></div> : 
         <div className={styles.eventWrapper}>
-            {console.log(props.dates)}
+           
             <div className={styles.years}>
                 <button className={props.page === '2019' ? styles.buttonActive : styles.button} onClick={() => props.changeYear('2019')} disabled={props.page === '2019'}>2019</button>
                 <button className={props.page === '2020' ? styles.buttonActive : styles.button} onClick={() => props.changeYear('2020')} disabled={props.page === '2020'}>2020</button>
@@ -82,6 +84,8 @@ const Events = (props) => {
            </table>
 
         </div>
+        }
+        </>
     )
 }
 export default Events;
