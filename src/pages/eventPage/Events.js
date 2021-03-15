@@ -5,10 +5,11 @@ const Events = (props) => {
 
     return (
         <div className={styles.eventWrapper}>
+            {console.log(props.dates)}
             <div className={styles.years}>
                 <button className={props.page === '2019' ? styles.buttonActive : styles.button} onClick={() => props.changeYear('2019')} disabled={props.page === '2019'}>2019</button>
-                <button className={props.page === '2020' ? styles.buttonActive :styles.button} onClick={() => props.changeYear('2020')} disabled={props.page === '2020'}>2020</button>
-                <button className={props.page === '2021' ? styles.buttonActive :styles.button} onClick={() => props.changeYear('2021')} disabled={props.page === '2021'}>2021</button>
+                <button className={props.page === '2020' ? styles.buttonActive : styles.button} onClick={() => props.changeYear('2020')} disabled={props.page === '2020'}>2020</button>
+                <button className={props.page === '2021' ? styles.buttonActive : styles.button} onClick={() => props.changeYear('2021')} disabled={props.page === '2021'}>2021</button>
             </div>
             <h2>Event List from {props.year}</h2>
            <table>
