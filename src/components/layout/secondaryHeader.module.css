@@ -6,6 +6,7 @@
     grid-column: span 5;
     grid-row-start: header;
     grid-row-end: main;
+    border-bottom: 1px solid #535252;
 }
 .headerBorder {
    margin: auto 0;
