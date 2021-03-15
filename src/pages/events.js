@@ -7,7 +7,7 @@ import info from '../data/events/eventData'
 import Events from './eventPage/Events'
 import styles from '../styles/EventPage/eventPage.module.css'
 const EventPage = () => {
-    const [eventPage, setEventPage] = useState('2019')
+    const [eventPage, setEventPage] = useState('2021')
 
     const switchEventPage = () => {
         switch(eventPage) {
